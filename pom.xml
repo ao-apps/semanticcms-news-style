@@ -47,7 +47,6 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 	</scm>
 
 	<dependencies>
-		<!-- TODO
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -56,19 +55,14 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-model</artifactId>
-			<version>1.6-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
 			<version>1.7-SNAPSHOT</version>
 		</dependency>
+		<!-- These styles only apply to the news view -->
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-model</artifactId>
+			<artifactId>semanticcms-news-view</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-		-->
 	</dependencies>
 </project>

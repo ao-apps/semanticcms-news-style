@@ -1,0 +1,45 @@
+/*
+ * semanticcms-news-style - Default style for SemanticCMS newsfeeds.
+ * Copyright (C) 2016  AO Industries, Inc.
+ *     support@aoindustries.com
+ *     7262 Bull Pen Cir
+ *     Mobile, AL 36695
+ *
+ * This file is part of semanticcms-news-style.
+ *
+ * semanticcms-news-style is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * semanticcms-news-style is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* Image source: http://mixclipart.com/fire-free-psd-file/ */
+div.semanticcms-news-view-rss-link > a > span {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: left center;
+	white-space: nowrap;
+	padding-left: 26px;
+	min-height: 24px;
+	background-size: 24px 24px;
+	background-image: url(rss.png);
+}
+article.semanticcms-news-view-article > h2 {
+	margin-bottom: 0em;
+}
+article.semanticcms-news-view-article > footer {
+	font-size: small;
+	margin-bottom: 0.5em;
+}
+div.semanticcms-news-view-description,
+div.semanticcms-news-view-body {
+	margin-top: 1em;
+}
