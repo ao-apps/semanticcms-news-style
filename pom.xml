@@ -27,7 +27,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 	<parent>
 		<groupId>com.semanticcms</groupId>
 		<artifactId>semanticcms-news</artifactId>
-		<version>1.0</version>
+		<version>1.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -36,7 +36,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>jar</packaging>
 
 	<name>SemanticCMS News Style</name>
-	<url>https://semanticcms.com/docs/semanticcms-news-style/</url>
+	<url>https://semanticcms.com/news/style/</url>
 	<description>Default style for SemanticCMS newsfeeds.</description>
 
 	<scm>
@@ -56,13 +56,13 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
-			<version>1.7</version>
+			<version>1.8-SNAPSHOT</version>
 		</dependency>
 		<!-- These styles only apply to the news view -->
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-news-view</artifactId>
-			<version>1.0</version>
+			<version>1.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
