@@ -33,7 +33,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>semanticcms-news-style</artifactId>
-	<version>1.1.4-validation-SNAPSHOT</version>
+	<version>2.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -70,7 +70,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 								<links>
 									<link>${javac.link.javaApi}</link>
 									<link>${javac.link.javaeeApi.6}</link>
-									<link>https://semanticcms.com/core/servlet/apidocs/</link>
+									<link>https://semanticcms.com/core/renderer/html/apidocs/</link>
 									<link>https://semanticcms.com/news/view/apidocs/</link>
 								</links>
 							</configuration>
@@ -90,7 +90,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-servlet</artifactId>
+			<artifactId>semanticcms-core-renderer-html</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<!-- These styles only apply to the news view -->

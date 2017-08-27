@@ -1,6 +1,6 @@
 /*
  * semanticcms-news-style - Default style for SemanticCMS newsfeeds.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,20 +22,20 @@
  */
 package com.semanticcms.news.style;
 
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for SemanticCMS newsfeeds.")
+@WebListener("Registers the styles for SemanticCMS newsfeeds in HtmlRenderer.")
 public class NewsStyleContextListener implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
 		// TODO: Only add this style to the news view
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
 		// Add our CSS file
-		semanticCMS.addCssLink("/semanticcms-news-style/styles.css");
+		htmlRenderer.addCssLink("/semanticcms-news-style/styles.css");
 	}
 
 	@Override
