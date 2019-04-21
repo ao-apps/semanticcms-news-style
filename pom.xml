@@ -84,7 +84,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- These styles only apply to the news view -->
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view</artifactId><version>1.1.4-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view</artifactId><version>1.2.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
