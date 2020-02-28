@@ -35,7 +35,7 @@ public class Initializer implements ServletContextListener {
 		// TODO: Only add this style to the news view
 		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
 		// Add our CSS file
-		htmlRenderer.addCssLink("/semanticcms-news-style/styles.css");
+		htmlRenderer.addCssLink("/semanticcms-news-style/semanticcms-news.css");
 	}
 
 	@Override
