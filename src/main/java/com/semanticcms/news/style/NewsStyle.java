@@ -22,20 +22,22 @@
  */
 package com.semanticcms.news.style;
 
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.aoindustries.web.resources.registry.Style;
+import com.aoindustries.web.resources.servlet.RegistryEE;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for SemanticCMS newsfeeds.")
-public class Initializer implements ServletContextListener {
+@WebListener("Registers the styles for SemanticCMS newsfeeds in RegistryEE.")
+public class NewsStyle implements ServletContextListener {
+
+	public static final Style SEMANTICCMS_AUTOGIT = new Style("/semanticcms-news-style/semanticcms-news.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
 		// TODO: Only add this style to the news view
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
 		// Add our CSS file
-		semanticCMS.addCssLink("/semanticcms-news-style/semanticcms-news.css");
+		RegistryEE.get(event.getServletContext()).global.styles.add(SEMANTICCMS_AUTOGIT);
 	}
 
 	@Override
