@@ -22,6 +22,7 @@
  */
 package com.semanticcms.news.style;
 
+import com.aoindustries.web.resources.registry.Group;
 import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import javax.servlet.ServletContextEvent;
@@ -31,13 +32,19 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for SemanticCMS newsfeeds in RegistryEE.")
 public class NewsStyle implements ServletContextListener {
 
-	public static final Style SEMANTICCMS_AUTOGIT = new Style("/semanticcms-news-style/semanticcms-news.css");
+	public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-news-style");
+
+	// TODO: Change to Group.Name once we have group-level ordering
+	public static final Style SEMANTICCMS_NEWS = new Style("/semanticcms-news-style/semanticcms-news.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		// TODO: Only add this style to the news view
 		// Add our CSS file
-		RegistryEE.get(event.getServletContext()).global.styles.add(SEMANTICCMS_AUTOGIT);
+		RegistryEE.Application.get(event.getServletContext())
+			.activate(RESOURCE_GROUP) // TODO: Only add this style to the news view
+			.getGroup(RESOURCE_GROUP)
+			.styles
+			.add(SEMANTICCMS_NEWS);
 	}
 
 	@Override
