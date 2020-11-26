@@ -1,6 +1,6 @@
 /*
  * semanticcms-news-style - Default style for SemanticCMS newsfeeds.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -21,6 +21,10 @@
  * along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/* Keep table of contents above the news anchor (used by clients to navigation to "guid") */
+div.semanticcms-news-anchor {
+	clear:both;
+}
 /* Image source: http://mixclipart.com/fire-free-psd-file/ */
 div.semanticcms-news-view-rss-link > a > span {
 	display: inline-block;
