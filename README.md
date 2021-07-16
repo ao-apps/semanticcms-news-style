@@ -10,6 +10,12 @@
 
 [![Build](https://github.com/aoindustries/semanticcms-news-style/workflows/Build/badge.svg?branch=1.x)](https://github.com/aoindustries/semanticcms-news-style/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-news-style/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-news-style)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-news-style&metric=alert_status)](https://sonarcloud.io/dashboard?branch=1.x&id=com.semanticcms%3Asemanticcms-news-style)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-news-style&metric=ncloc)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-news-style&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-news-style&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-news-style&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-news-style&metric=security_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-news-style&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-news-style&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-news-style&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-news-style&metric=coverage)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-news-style&metric=Coverage)
 
 Default style for [SemanticCMS newsfeeds](https://github.com/aoindustries/semanticcms-news).
 
