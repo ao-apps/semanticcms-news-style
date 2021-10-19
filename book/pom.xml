@@ -29,7 +29,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style-book</artifactId><version>1.4.1</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style-book</artifactId><version>1.4.1-POST-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -74,7 +74,7 @@ along with semanticcms-news-style.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/ao-apps/semanticcms-news-style.git</connection>
 		<developerConnection>scm:git:git@github.com:ao-apps/semanticcms-news-style.git</developerConnection>
 		<url>https://github.com/ao-apps/semanticcms-news-style</url>
-		<tag>semanticcms-news-style-book-1.4.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
