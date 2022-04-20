@@ -33,23 +33,23 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for SemanticCMS newsfeeds in RegistryEE.")
 public class NewsStyle implements ServletContextListener {
 
-	public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-news-style");
+  public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-news-style");
 
-	// TODO: Change to Group.Name once we have group-level ordering
-	public static final Style SEMANTICCMS_NEWS = new Style("/semanticcms-news-style/semanticcms-news.css");
+  // TODO: Change to Group.Name once we have group-level ordering
+  public static final Style SEMANTICCMS_NEWS = new Style("/semanticcms-news-style/semanticcms-news.css");
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		// Add our CSS file
-		RegistryEE.Application.get(event.getServletContext())
-			.activate(RESOURCE_GROUP) // TODO: Only add this style to the news view and when news on page
-			.getGroup(RESOURCE_GROUP)
-			.styles
-			.add(SEMANTICCMS_NEWS);
-	}
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    // Add our CSS file
+    RegistryEE.Application.get(event.getServletContext())
+      .activate(RESOURCE_GROUP) // TODO: Only add this style to the news view and when news on page
+      .getGroup(RESOURCE_GROUP)
+      .styles
+      .add(SEMANTICCMS_NEWS);
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }

@@ -1,6 +1,6 @@
 /*
  * semanticcms-news-style - Default style for SemanticCMS newsfeeds.
- * Copyright (C) 2016, 2020  AO Industries, Inc.
+ * Copyright (C) 2016, 2020, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -23,28 +23,28 @@
 
 /* Keep table of contents above the news anchor (used by clients to navigation to "guid") */
 div.semanticcms-news-anchor {
-	clear:both;
+  clear:both;
 }
 /* Image source: http://mixclipart.com/fire-free-psd-file/ */
 div.semanticcms-news-view-rss-link > a > span {
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: left center;
-	white-space: nowrap;
-	padding-left: 26px;
-	min-height: 24px;
-	background-size: 24px 24px;
-	background-image: url(rss.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  white-space: nowrap;
+  padding-left: 26px;
+  min-height: 24px;
+  background-size: 24px 24px;
+  background-image: url(rss.png);
 }
 /* These styles are consistent with the content view */
 article.semanticcms-news-view-article > h2 {
-	margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 article.semanticcms-news-view-article > footer {
-	font-size: small;
-	margin-bottom: 0.5em;
+  font-size: small;
+  margin-bottom: 0.5em;
 }
 div.semanticcms-news-view-description,
 div.semanticcms-news-view-body {
-	margin-top: 1em;
+  margin-top: 1em;
 }
