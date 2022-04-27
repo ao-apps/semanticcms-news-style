@@ -42,7 +42,7 @@ public class NewsStyle implements ServletContextListener {
   public void contextInitialized(ServletContextEvent event) {
     // Add our CSS file
     RegistryEE.Application.get(event.getServletContext())
-        .activate(RESOURCE_GROUP) // TODO: Only add this style to the news view and when news on page
+        .activate(RESOURCE_GROUP)// TODO: Only add this style to the news view and when news on page
         .getGroup(RESOURCE_GROUP)
         .styles
         .add(SEMANTICCMS_NEWS);
