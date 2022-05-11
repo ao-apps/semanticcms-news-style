@@ -30,6 +30,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Registers the styles for SemanticCMS newsfeeds in {@link RegistryEE}.
+ */
 @WebListener("Registers the styles for SemanticCMS newsfeeds in RegistryEE.")
 public class NewsStyle implements ServletContextListener {
 
@@ -44,8 +47,8 @@ public class NewsStyle implements ServletContextListener {
     RegistryEE.Application.get(event.getServletContext())
         .activate(RESOURCE_GROUP)// TODO: Only add this style to the news view and when news on page
         .getGroup(RESOURCE_GROUP)
-        .styles
-        .add(SEMANTICCMS_NEWS);
+            .styles
+            .add(SEMANTICCMS_NEWS);
   }
 
   @Override
