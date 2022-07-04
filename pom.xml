@@ -46,7 +46,7 @@ along with semanticcms-news-style.  If not, see <https://www.gnu.org/licenses/>.
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
 
-  <name>SemanticCMS News Style²</name>
+  <name>SemanticCMS News Style</name>
   <url>https://semanticcms.com/news/style/</url>
   <description>Default style for SemanticCMS newsfeeds.</description>
   <inceptionYear>2016</inceptionYear>
