@@ -23,7 +23,7 @@ Default style for [SemanticCMS newsfeeds](https://github.com/ao-apps/semanticcms
 * [Project Home](https://semanticcms.com/news/style/)
 * [Changelog](https://semanticcms.com/news/style/changelog)
 * [API Docs](https://semanticcms.com/news/style/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-news-style)
+* [Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-news-style)
 * [GitHub](https://github.com/ao-apps/semanticcms-news-style)
 
 ## Contact Us
