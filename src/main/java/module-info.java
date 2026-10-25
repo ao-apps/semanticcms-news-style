@@ -21,9 +21,10 @@
  * along with semanticcms-news-style.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.semanticcms.news.style {
-  exports com.semanticcms.news.style;
   // Direct
   requires com.aoapps.web.resources.registry; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId>
   requires com.aoapps.web.resources.servlet; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   requires jakarta.servlet; // <groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId>
+
+  exports com.semanticcms.news.style;
 }
